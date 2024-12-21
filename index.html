@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+
+    <!-- Fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Título principal -->
+        <h2 class="title">A aventura começa aqui <img src="images/foguete.svg" alt="foguete" width="30px"></h2>
+
+        <!-- Subtítulo -->
+        <p class="subtitle">Torne o gerenciamento do seu aplicativo fácil e divertido!</p>
+
+        <!-- Formulário -->
+        <form action="#" method="POST" class="form">
+            <!-- Campo de nome de usuário -->
+            <div class="form-group">
+                <label for="username">Nome de usuário</label>
+                <input type="text" id="username" name="username" class="input"
+                    placeholder="Digite seu nome de usuário">
+            </div>
+
+            <!-- Campo de e-mail -->
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" class="input" placeholder="Digite seu e-mail">
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <div class="password-input">
+                    <!-- O placeholder vazio será preenchido pelo JavaScript -->
+                    <input type="password" id="password" name="password" class="input" placeholder="">
+                    <!-- Ícones de mostrar/ocultar senha -->
+                    <div class="password-icons">
+                        <i class="password-icon" data-icon="closed">
+                            <!-- SVG do ícone de olho aberto -->
+                            <svg id="eye-open-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none" />
+                                <path d="M128,56C48,56,16,128,16,128s32,72,112,72,112-72,112-72S208,56,128,56Z"
+                                    fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="12" />
+                                <circle cx="128" cy="128" r="40" fill="none" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="12" />
+                            </svg>
+                            <!-- SVG do ícone de olho fechado -->
+                            <svg id="eye-closed-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none" />
+                                <path d="M32,104c16.81,20.81,47.63,48,96,48s79.19-27.19,96-48" fill="none"
+                                     stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="12" />
+                                <line x1="224" y1="168" x2="200.62" y2="127.09" fill="none" 
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12" />
+                                <line x1="160" y1="192" x2="152.91" y2="149.45" fill="none" 
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12" />
+                                <line x1="96" y1="192" x2="103.09" y2="149.45" fill="none" 
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12" />
+                                <line x1="32" y1="168" x2="55.38" y2="127.09" fill="none" 
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="12" />
+                            </svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkbox de termos e condições -->
+            <div class="form-group form-check">
+                <div class="form-check-container">
+                    <input type="checkbox" id="termos-condicoes" class="form-check-input" name="termos-condicoes">
+                    <label for="termos-condicoes" class="form-check-label">
+                        <span class="form-check-label-text">Eu concordo com a</span> <a href="#"
+                            class="form-check-label-link">política de privacidade e termos</a>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Botão de cadastro -->
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <!-- Texto do rodapé com link para login -->
+            <p class="footer-text"><span class="footer-text">Já tem uma conta? </span><a href="#"
+                    class="footer-link">Faça login</a></p>
+
+            <!-- Divisor com a palavra "ou" -->
+            <div class="divider">
+                <div class="line"></div>
+                <p class="or">ou</p>
+                <div class="line"></div>
+            </div>
+
+            <!-- Ícones sociais -->
+            <div class="social-icons">
+                <a href="#" class="btn btn-sm btn-icon rounded-pill btn-text-facebook"><img src="images/facebook.svg"
+                        alt="facebook" width="20px"></a>
+                <a href="#" class="btn btn-sm btn-icon rounded-pill btn-text-twitter"><img src="images/twitter.svg"
+                        alt="twitter" width="20px"></a>
+                <a href="#" class="btn btn-sm btn-icon rounded-pill btn-text-github"><img src="images/github.svg"
+                        alt="github" width="20px"></a>
+                <a href="#" class="btn btn-sm btn-icon rounded-pill btn-text-google"><img src="images/google.svg"
+                        alt="google" width="20px"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="login.js"></script>
+</body>
+
+</html>
